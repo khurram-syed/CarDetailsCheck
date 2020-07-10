@@ -1,0 +1,17 @@
+# exclude everything except directory foo/bar
+*.log
+*.pyc
+.idea/
+*/target/**
+/target/**/*
+/target/classes/
+/target/test-classes/
+/target/surefire-reports/
+/target/maven-status/
+/target/generated-sources/
+/target/generated-test-sources/
+/dist/
+test.py
+*.tmp
+/*.egg-info
+*.iml
