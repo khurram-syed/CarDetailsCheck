@@ -1,5 +1,6 @@
 # exclude everything except directory foo/bar
 *.log
+/logs
 *.pyc
 .idea/
 */target/**
@@ -10,6 +11,7 @@
 /target/maven-status/
 /target/generated-sources/
 /target/generated-test-sources/
+/reports
 /dist/
 test.py
 *.tmp
