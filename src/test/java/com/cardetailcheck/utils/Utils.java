@@ -13,9 +13,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Utils {
-    /* Method to match the Car Reg pattern from the list of File lines(extracted from input and returning the
-      List of Valid Car Regs
-   */
+
+    /**
+     * Method to match the Car Reg pattern from the list of File lines(i.e. extracted from the input file) and
+     *  returning the List of Valid Car Regs in proper format
+     *
+     * @param lines
+     * @return List<String
+     */
     public static List<String> getCarRegsFromList(List<String> lines){
         List<String> list = new ArrayList<>();
         Pattern pattern = Pattern.compile("[A-Z]{2}\\d{2}\\s+[A-Z]{3}|[A-Z]{2}\\d{2}[A-Z]{3}");
@@ -28,7 +33,12 @@ public class Utils {
         return list;
     }
 
-    /** Method to Get the Each Reg Map from the output file To match the Site Car Details in Then Step **/
+    /**
+     * Method to Get the Each Reg Map from the output file To match the Site Car Details in Then Step
+     *
+     * @param filePath
+     * @return Map<String,Map<String,String>>
+     */
     public static Map<String, Map<String,String>> getListOfRecordsMapFromCSV(String filePath){
         Map<String,Map<String,String>> recordsMapList = new HashMap<>();
         try {
@@ -52,7 +62,12 @@ public class Utils {
         return recordsMapList;
     }
 
-    /** Method to read the input file records and adding each line as an item in a List of String **/
+    /**
+     * Method to read the input file records and adding each line as an item in String list.
+     *
+     * @param filePath
+     * @return List<String>
+     */
     public static List<String> getListOfRecordsFromCSV( String filePath){
         List<String> inputLines = new ArrayList<>();
         try {

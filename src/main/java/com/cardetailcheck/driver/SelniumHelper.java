@@ -14,7 +14,7 @@ public class SelniumHelper {
     private static final int WAIT_TIME=3;
 
     /**
-     * This wait method returns boolean(true/false) when supplied By element to it.
+     * This wait method returns boolean(true/false) when supplied WebElement to it.
      *
      * @param element
      * @return boolean

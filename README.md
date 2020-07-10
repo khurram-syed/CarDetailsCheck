@@ -26,14 +26,14 @@ RUN OPTIONS:
 REPORTING & LOGGING :   
 
  - TestNG HTML Reports will be generated automatically at following location with above command execution. 
-  Screenshots gets embedded in the report but due to Soft Assertions their accuracy is not certain as they are being 
+  Screenshots will get embedded in the report but due to Soft Assertions their accuracy is not certain as they are being 
   captured at the end of each test in test hooks according to the test automation best practices.
  
-  > Report Locaiton : <root>/reports/htlm/cucumber.html
+  > Report Location : <root>/reports/htlm/cucumber.html
  
- - Logs are recorded at following location
+ - Logs will be recorded at following location
    
-   > Logs Locaiton : <root>/logs/logging.log
+   > Logs Location : <root>/logs/logging.log
   
 TASK EXPLANATION:
 
