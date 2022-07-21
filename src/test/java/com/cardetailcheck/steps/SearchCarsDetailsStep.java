@@ -94,7 +94,6 @@ public class SearchCarsDetailsStep {
             }else {
                 //** Get the value of car(Make,model etc.) from recordMap and check with actual values from the site **
                 carCheckDetailsPage.isCarDetailsFound();
-                logger.info("=========Inside else  ========");
                 Map<String, String> recordMap = recordsMapList.get(carInputList.get(count).trim());
                 softAssert.assertEquals(recordMap.get("REGISTRATION"), carCheckDetailsPage.getOnlyActualRegNo(), carInputList.get(count) + " car Reg not matching..!");
                 softAssert.assertEquals(recordMap.get("MAKE"), carCheckDetailsPage.getMakeORModel("make"), carInputList.get(count)  + " car Make not matching..!");

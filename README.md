@@ -1,5 +1,5 @@
 
-PROJECT CONFIGURATION :
+**PROJECT CONFIGURATION :**
     
     - The Porject has been developed With following Java dependencies/tools
       1- Cucumber-TestNG 4.8.1
@@ -20,10 +20,12 @@ RUN OPTIONS:
    
    > mvn clean test -Dcucumber.options="--tags @SearchCarDetails"
   
- Note: Chrome Driver for Windows has been provided at src/main/resources/drivers but please check the compatibility 
+ *Note#1:* Chrome Driver for Windows has been provided at src/main/resources/drivers but please check the compatibility 
        with your chrome browser version accordingly.
-
-REPORTING & LOGGING :   
+ 
+ *Note#2:* You can also run in Firefox by changing "driverName" to "Firefox" in src/main/java/com/cardetailcheck/driver/SeleniumDriver.java     
+       
+**REPORTING & LOGGING** :   
 
  - TestNG HTML Reports will be generated automatically at following location with above command execution. 
   Screenshots will get embedded in the report but due to Soft Assertions their accuracy is not certain as they are being 
@@ -35,7 +37,7 @@ REPORTING & LOGGING :
    
    > Logs Location : <root>/logs/logging.log
   
-TASK EXPLANATION:
+**TASK EXPLANATION**:
 
 TASK : To extract the Car Registrations info from "car_input.txt" and then each reg number will be fed into http://cartaxcheck.co.uk/
          And check if each regNo get failed/passed according to matching results in output file.
