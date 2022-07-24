@@ -60,7 +60,7 @@ public class SearchCarsDetailsStep {
        }
     }
 
-    @When("I navigate to the Home Page \"(.*)\"")
+    @When("I navigate to the Home Page {string}")
     public void INavigateToTheHomePage (String url) {
         logger.info("I navigate to the Home Page "+ url);
         SeleniumDriver.navigate(url);

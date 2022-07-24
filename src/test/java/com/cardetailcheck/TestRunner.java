@@ -8,10 +8,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         plugin = {"pretty","json:target/positive/cucumber.json",
-                  "html:reports/htlm/cucumber.html",
+                  "html:reports/htlm/cucumber",
                    },
          glue = {"com.cardetailcheck.steps"}
-        ,tags={"@searhCars1"}
+        ,tags="@searhCars1"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 
