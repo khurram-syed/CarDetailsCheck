@@ -2,7 +2,7 @@
 **PROJECT CONFIGURATION :**
     
     - The Porject has been developed With following Java dependencies/tools
-      1- Cucumber-TestNG 4.8.1
+      1- Cucumber-TestNG 7.3.4
       2- Selenium WebDriver 3.14.0
       3- Log4j 1.2.17
 
@@ -23,7 +23,7 @@ RUN OPTIONS:
  *Note#1:* Chrome Driver for Windows has been provided at src/main/resources/drivers but please check the compatibility 
        with your chrome browser version accordingly.
  
- *Note#2:* You can also run in Firefox by changing "driverName" to "Firefox" in src/main/java/com/cardetailcheck/driver/SeleniumDriver.java     
+ *Note#2:* You can also run in Firefox by changing "driverName" to "Firefox" in src/main/java/com/cardetailcheck/driver/SeleniumDriver.java file  
        
 **REPORTING & LOGGING** :   
 
